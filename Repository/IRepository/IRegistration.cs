@@ -1,4 +1,5 @@
 ﻿using Entities;
+using Entities.ResponseClass;
 
 namespace Repository.IRepository
 {
@@ -10,5 +11,6 @@ namespace Repository.IRepository
         public Task<Registration> UpdateRegistration(Registration registration);
         public Task<Registration> DeleteRegistration(Registration registration);
         public Task<Registration> GetCardById(int id);
+        public Task<Response> Login(string Name , string password);
     }
 }
